@@ -1,0 +1,13 @@
+To compile, enter "make" at the command prompt within the directory.
+
+To run, enter "./fractions" at the command prompt. The program will start and menu options should appear.  Enter a number from 1 to 9 for one of these options or 0 to end the program.  Once the computations for any of these options have been completed, the program will return to this main menu.
+
+To load a list of operations from a data file, enter 1 and type in the file name when prompted.  The data file should contain lines of commands in the format:
+
+Operation Arg1 Arg2 etc..
+
+Number of arguments must be valid for the given operation.  All arguments are integers, except for the operation D2F which takes a single floating point input.  If 0 is entered as a denominator, the program will automatically change it to 1 (denominators cannot be 0).
+
+To load a list of fractions from a data file, enter 3 at the main menu and type in the file name when prompted.  For this purpose, the data file should contain pairs of integers representing numerators and denominators.  Numerators can be any positive or negative integer but if a denominator is read as 0, the program will correct it to 1 by default (denominators cannot be 0).
+
+To manually enter a list of fractions one at a time during run-time, enter 4 at the main menu.  If an array has already been loaded from a file or entered at the console, this will be overridden be the newly entered list.  Main menu options 6-9 will then compute for the latest array loaded or entered.
